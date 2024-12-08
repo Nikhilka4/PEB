@@ -1,8 +1,9 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center py-4 px-16">
+    <nav className="h-[15vh] flex justify-between items-center py-4 px-16">
       <div className="flex justify-center items-center gap-6">
         <svg
           className="h-14 w-14"
@@ -44,20 +45,36 @@ const Navbar = () => {
           </span>
         </div>
       </div>
-      <div>
-        <ul className="flex justify-center items-center gap-6 font-medium">
-          <li>Home</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li>About us</li>
-        </ul>
+      <div className="flex justify-center items-center gap-6 font-medium">
+        <NavLink
+          className={({ isActive }) => (isActive ? "underline" : "")}
+          to="/"
+        >
+          Home
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "underline" : "")}
+          to="/services"
+        >
+          Services
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "underline" : "")}
+          to="/projects"
+        >
+          Projects
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "underline" : "")}
+          to="/about"
+        >
+          About us
+        </NavLink>
       </div>
       <div>
         <button class="bg-black text-white px-6 py-2 text-sm rounded-md hover:bg-gray-800">
           CONTACT
         </button>
-
-        {/* <button className='bg-black text-2xl text-white px-4 py-2 rounded-lg font-semibold'>CONTACT</button> */}
       </div>
     </nav>
   );
