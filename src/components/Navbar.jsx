@@ -72,7 +72,7 @@ const Navbar = () => {
         </NavLink>
       </div>
       <div>
-        <button class="bg-black text-white px-6 py-2 text-sm rounded-md hover:bg-gray-800">
+        <button className="bg-black text-white px-6 py-2 text-sm rounded-md hover:bg-transparent hover:text-black border border-black hover:border-black transition-all duration-300">
           CONTACT
         </button>
       </div>
