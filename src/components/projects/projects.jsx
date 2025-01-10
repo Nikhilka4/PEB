@@ -22,7 +22,7 @@ const projects = () => {
         />
         <div>
           <h3 className="text-5xl font-medium mb-4 mt-4 md:mt-0 text-center md:text-left">
-            Paramjyoti School Roofing
+            Paramjyoti School <br /> Roofing
           </h3>
           <p className="text-2xl font-medium mb-4 text-center md:text-left">
             Amalapuram, Andhra Pradesh, 30,000 sq.ft
@@ -45,7 +45,7 @@ const projects = () => {
         />
         <div>
           <h3 className="text-5xl font-medium mb-4 mt-4 md:mt-0 text-center md:text-left">
-            Warehouse for VsB agro tech
+            Warehouse for VsB <br /> agro tech
           </h3>
           <p className="text-2xl font-medium mb-4 text-center md:text-left">
             Samarlakota, Andhra Pradesh, 22,000 sq.ft{" "}
