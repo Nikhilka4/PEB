@@ -7,6 +7,7 @@ import { Button } from "./ui/button";
 import { CiMenuBurger } from "react-icons/ci";
 import Headroom from "react-headroom";
 import { IoMdClose } from "react-icons/io";
+import Image from "next/image";
 
 const Navbar = () => {
   const navLinks = [
@@ -67,7 +68,7 @@ const Navbar = () => {
       <Headroom>
         <div className="h-[15vh] flex justify-between items-center py-6 md:py-4 px-7 md:px-24 bg-white shadow-md z-50 relative">
           <Link href="/home" className="flex justify-center items-center gap-6">
-            <img src="/logo.svg" alt="" className="h-14 w-14" />
+            <Image src="feature-1.svg" alt="" className="" height={50} width={50}  />
             <div className="flex flex-col gap-1">
               <span className="text-sm font-medium w-5 whitespace-nowrap">
                 PRANAVI
